@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tennis Score Counter</title>
+  </head>
+
+  <body>
+    <h1>Game score</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Set</th>
+          <th>Game</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Player 1</td>
+          <td id="cell_score_p1">0</td>
+          <td id="cell_game_p1">0</td>
+        </tr>
+        <tr>
+          <td>Player 2</td>
+          <td id="cell_score_p2">0</td>
+          <td id="cell_game_p2">0</td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="button_add_score_p1">Score 1</button>
+    <button id="button_add_score_p2">Score 2</button>
+    <button id="button_undo">Undo</button>
+    <button id="button_redo">Redo</button>
+    <button id="button_reset">Reset</button>
+    <section>
+      <h2>Game records</h2>
+      <ol id="game_records"></ol>
+    </section>
+  </body>
+
+  <script src="./scripts/main.js"></script>
+</html>
