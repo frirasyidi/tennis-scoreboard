@@ -1,6 +1,6 @@
 "use strict";
 
-it("button click should change a player's score", () => {
+it("button click should change a player 1's score", () => {
   // Mock a document body
   document.body.innerHTML =
     "<div>" +
@@ -8,7 +8,7 @@ it("button click should change a player's score", () => {
     '  <button id="button_add_score_p1">Score 1</button>' +
     '</div>';
 
-  require("./main");
+  require("../../src/ts/main");
   const $ = require("jquery");
 
   $("#button_add_score_p1").click();
